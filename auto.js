@@ -117,7 +117,7 @@ const routes = [{
   path: '/step_by_step_guide',
   file: 'guide.html'
 }, {
-  path: '/active',
+  path: '/online_user',
   file: 'online.html'
 }, {
   path: '/developer',
