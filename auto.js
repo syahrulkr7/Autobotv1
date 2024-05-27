@@ -119,6 +119,9 @@ const routes = [{
 }, {
   path: '/active',
   file: 'online.html'
+}, {
+  path: '/developer',
+  file: 'developer.html'
 }, ];
 routes.forEach(route => {
   app.get(route.path, (req, res) => {
