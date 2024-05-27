@@ -117,7 +117,7 @@ const routes = [{
   path: '/step_by_step_guide',
   file: 'guide.html'
 }, {
-  path: '/online_user',
+  path: '/active',
   file: 'online.html'
 }, ];
 routes.forEach(route => {
