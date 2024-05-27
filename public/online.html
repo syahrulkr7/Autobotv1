@@ -113,16 +113,13 @@
                      image.alt = 'User Thumbnail';
                      image.className = 'img-thumbnail';
                      const userInfo = document.createElement('div');
-                     userInfo.className = ';
+                     userInfo.className = 'user-info';
                      const userName = document.createElement('h4');
-                     userName.textContent = ` H i d d e n `;
-                     const profileLink = document.createElement('p');
-                     profileLink.innerHTML = `;
+                     userName.textContent = `H I D D E N`;
                      const uptimeUser = document.createElement('p');
                      uptimeUser.className = 'uptime-user';
-                     uptimeUser.innerHTML = `Uptime: ${timeFormat(time)}`;
+                     uptimeUser.innerHTML = `Active Since: ${timeFormat(time)}`;
                      userInfo.appendChild(userName);
-                     userInfo.appendChild(profileLink);
                      userInfo.appendChild(uptimeUser);
                      userCard.appendChild(image);
                      userCard.appendChild(userInfo);
@@ -141,7 +138,7 @@
 
          function updateTimer(userCard, currentTime) {
              const uptimeUser = userCard.querySelector('.uptime-user');
-             uptimeUser.textContent = `Uptime: ${timeFormat(currentTime)}`;
+             uptimeUser.textContent = `Active Since: ${timeFormat(currentTime)}`;
          }
 
         function timeFormat(currentTime) {
@@ -154,13 +151,13 @@
 
             switch (true) {
                 case days > 0:
-                    timeFormat += `${days} day${days > 1 ? 's' : ''} `;
+                    timeFormat += `| ${days} day${days > 1 ? 's' : ''} `;
                 case hours > 0:
-                    timeFormat += `${hours} hour${hours > 1 ? 's' : ''} `;
+                    timeFormat += `| ${hours} hour${hours > 1 ? 's' : ''} `;
                 case minutes > 0:
-                    timeFormat += `${minutes} minute${minutes > 1 ? 's' : ''} `;
+                    timeFormat += `| ${minutes} minute${minutes > 1 ? 's' : ''} `;
                 default:
-                    timeFormat += `${seconds} second${seconds > 1 ? 's' : ''}`;
+                    timeFormat += `| ${seconds} second${seconds > 1 ? 's' : ''}`;
             }
 
             return timeFormat.trim();
@@ -169,7 +166,7 @@
 
          listOfAi();
 
-      </script>
+          </script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
