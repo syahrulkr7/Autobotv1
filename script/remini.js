@@ -29,7 +29,7 @@ module.exports.handleEvent = async function ({ api, event }) {
 
   api.sendMessage("🕟 | 𝙴𝚗𝚑𝚊𝚗𝚌𝚒𝚗𝚐, 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝 𝚏𝚘𝚛 𝚊 𝚖𝚘𝚖𝚎𝚗𝚝..", threadID, async () => {
     try {
-      const response = await axios.get(`https://eurixapi.onrender.com/remini?input=${encodeURIComponent(photoUrl)}`);
+      const response = await axios.get(`https://hiroshi-rest-api.replit.app/tools/remini?url=${encodeURIComponent(photoUrl)}`);
       const processedImageURL = response.data.image_data;
       const img = (await axios.get(processedImageURL, { responseType: "arraybuffer" })).data;
 
