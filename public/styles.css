@@ -160,17 +160,17 @@ body {
         margin-top: 10px;
         padding: 14px;
         align-items: center;
-        border: 1px solid #blue;
+        border: 1px solid #87afff;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, border-color 0.3s ease; 
-        border-color: #ccc;
-        background-color: #fff;
+        border-color: #87afff;
+        background-color: #87afff;
 }
 
 .form-check:hover {
-        background-color: #f5f5; 
-        border-color: #f8f8f8; 
+        background-color: #87afff; 
+        border-color: #87afff; 
 }
 
 .form-check-input {
@@ -189,8 +189,8 @@ body {
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease, border-color 0.3s ease; 
-        border-color: #ccc;
-        background-color: blue;
+        border-color: #87afff;
+        background-color: #87afff;
 
 }
 
