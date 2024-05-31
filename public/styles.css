@@ -191,6 +191,17 @@ body {
         transition: background-color 0.3s ease, border-color 0.3s ease; 
         border-color: #ccc;
         background-color: blue;
+
+}
+
+#json-data {
+    background-image: url('https://media4.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif?cid=6c09b952uys1wv9s8v4hnc7dbo339rgcjiunfvyovq9u6m5n&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 }
 , #listOfCommands, #listOfCommandsEvent, #prefixOfCommands,          #adminOfCommands {
   border: none !important;
@@ -204,7 +215,7 @@ div {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://i.ibb.co/TR8xT7F/77ab22a6c2a5bd6ec6cb366a84c7d5ec.jpg'); 
+    background-image: url('https://media4.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif?cid=6c09b952uys1wv9s8v4hnc7dbo339rgcjiunfvyovq9u6m5n&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
