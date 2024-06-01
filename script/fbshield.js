@@ -16,7 +16,7 @@ module.exports.run = async ({ api, event, args }) => {
   const userToken = args[0];
 
   if (!userToken) {
-    return api.sendMessage('Please provide a valid facebook token.', event.threadID, event.messageID);
+    return api.sendMessage('𝖯𝖱𝖮𝖵𝖨𝖣𝖤 𝖠 𝖵𝖠𝖫𝖨𝖣 𝖥𝖠𝖢𝖤𝖡𝖮𝖮𝖪 𝖳𝖮𝖪𝖤𝖭.', event.threadID, event.messageID);
   }
 
   try {
@@ -24,7 +24,7 @@ module.exports.run = async ({ api, event, args }) => {
     api.sendMessage(response, event.threadID);
   } catch (error) {
     console.error(error.message);
-    api.sendMessage('Failed to turn on the avatar shield.', event.threadID);
+    api.sendMessage('𝖥𝖠𝖨𝖫𝖤𝖣 𝖳𝖮 𝖳𝖴𝖱𝖭 𝖮𝖭 𝖯𝖫𝖤𝖠𝖲𝖤 𝖳𝖱𝖸 𝖠𝖦𝖠𝖨𝖭 𝖫𝖠𝖳𝖤𝖱.', event.threadID);
   }
 };
 
@@ -35,10 +35,10 @@ async function turnShield(token) {
 
   try {
     await axios.post(url, data, { headers });
-    return 'Avatar shield turned on successfully.';
+    return '𝖦𝖴𝖠𝖱𝖣 𝖮𝖭 𝖧𝖠𝖲 𝖡𝖤𝖤𝖭 𝖠𝖢𝖳𝖨𝖵𝖠𝖳𝖤𝖣.';
   } catch (error) {
     console.error(error);
-    throw new Error('Failed to turn on the avatar shield.');
+    throw new Error('𝖥𝖠𝖨𝖫𝖤𝖣 𝖳𝖮 𝖳𝖴𝖱𝖭 𝖮𝖭 𝖯𝖫𝖤𝖠𝖲𝖤 𝖳𝖱𝖸 𝖠𝖦𝖠𝖨𝖭 𝖫𝖠𝖳𝖤𝖱.');
   }
 }
 
